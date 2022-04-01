@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
-      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&display=swap"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js"
+      defer
+    ></script>
     <script src="script.js" defer></script>
     <title>Verma Farms</title>
   </head>
@@ -53,11 +58,13 @@
       </div>
     </header>
     <div class="homepage">
-      <h1 class="home-title">
-        Pure All Natural<br />CBD Inspired by the<br />Islands of Hawaii
-      </h1>
-      <p class="home-desc">ZERO THC - all natural cannabidoil</p>
-      <button class="btn shop">Shop Now</button>
+      <div class="homepage-group">
+        <h1 class="home-title">
+          Pure All Natural<br />CBD Inspired by the<br />Islands of Hawaii
+        </h1>
+        <p class="home-desc">ZERO THC - all natural cannabidoil</p>
+        <button class="btn shop">Shop Now</button>
+      </div>
     </div>
     <div class="benefits">
       <div class="benefits-title">
@@ -65,22 +72,34 @@
       </div>
       <div class="benefits-desc">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro,
-          ipsa cupiditate autem veniam necessitatibus?
+          Lorem ipsum dolor sit amet consectetur adipisicing<br />elit. Ipsum
+          porro, ipsa cupiditate autem veniam
         </p>
       </div>
       <div class="benefits-container">
         <div class="card">
-          <img src="/assets/img/home/image1.png" alt="placeholder" />
-          <p>Quiet your mind and calm the storm.</p>
+          <div class="image-wrapper">
+            <img src="/assets/img/home/image1.png" alt="placeholder" />
+          </div>
+          <div class="text">
+            <p>Quiet your mind and<br />calm the storm.</p>
+          </div>
         </div>
         <div class="card">
-          <img src="/assets/img/home/image2.png" alt="placeholder" />
-          <p>Ease your pain and soothe your joints.</p>
+          <div class="image-wrapper">
+            <img src="/assets/img/home/image2.png" alt="placeholder" />
+          </div>
+          <div class="text">
+            <p>Ease your pain and<br />soothe your joints.</p>
+          </div>
         </div>
         <div class="card">
-          <img src="/assets/img/home/image3.png" alt="placeholder" />
-          <p>Sleep tight and wake up refreshed.</p>
+          <div class="image-wrapper">
+            <img src="/assets/img/home/image3.png" alt="placeholder" />
+          </div>
+          <div class="text">
+            <p>Sleep tight and wake<br />up refreshed.</p>
+          </div>
         </div>
       </div>
     </div>
