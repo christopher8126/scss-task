@@ -23,7 +23,7 @@ const loadAnim = () => {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/assets/wave-files/data-color-3.json',
+    path: '/assets/wave-files/data-color-1.json',
   });
 };
 
