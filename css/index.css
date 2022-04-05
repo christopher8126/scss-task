@@ -137,6 +137,7 @@ table {
 /* now we use our normal styles */
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 p,
@@ -150,6 +151,10 @@ h6 {
 }
 
 /* Start of Sass */
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   padding: 2rem 1.5rem;
@@ -415,6 +420,7 @@ header .cart {
 
 .satisfaction {
   background-color: #fbf4ee;
+  position: relative;
   height: 120vh;
   padding: 1rem;
 }
@@ -459,7 +465,424 @@ header .cart {
   color: #c7b9b1;
   font-weight: 600;
 }
-.satisfaction-img img {
-  width: 100%;
+.satisfaction .image {
+  position: absolute;
+  background-image: url("/assets/img/home/hand-oil-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
   height: 100%;
+  top: 0;
+  left: 55%;
+}
+.satisfaction svg {
+  position: absolute;
+  top: 14rem;
+}
+.satisfaction svg path {
+  fill: #faead8;
+}
+
+.work {
+  padding: 2rem;
+  background-color: #faead8;
+  position: relative;
+  height: 120vh;
+}
+.work .center {
+  display: flex;
+}
+.work .center .work-group {
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  height: 100vh;
+  padding: 3rem;
+}
+.work .center .work-group-title p {
+  color: #cfbfad;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.work .center .work-group-title h2 {
+  color: #443636;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+.work .center .work-group-desc {
+  color: #dfc9b5;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.work .center .work-group-button {
+  margin-top: 2rem;
+}
+.work .center .work-group-button .workbtn {
+  background-color: #f6914e;
+  width: 40ch;
+  padding-block: 1.15rem;
+}
+.work .center .image {
+  background-image: url(/assets/img/home/gummies-stacked.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60%;
+  height: 100vh;
+  z-index: 10;
+}
+.work .left,
+.work .right {
+  position: absolute;
+  top: 0;
+}
+.work .left {
+  background-image: url("/assets/img/home/palm-left.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 80%;
+  top: -5rem;
+  left: 0;
+}
+.work .right {
+  right: 0;
+  background-image: url("/assets/img/home/palm-right.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 50%;
+}
+.work svg {
+  position: absolute;
+  top: 18rem;
+  left: 0;
+}
+.work svg path {
+  fill: #fcf4ee;
+}
+
+.products {
+  padding: 3rem 1rem;
+  background-color: #fcf4ee;
+  position: relative;
+  height: 150vh;
+}
+.products-title {
+  text-align: center;
+}
+.products-title h2 {
+  color: #443636;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.products-sample {
+  margin-top: 6rem;
+  display: flex;
+  width: min(100ch, 80%);
+  margin-inline: auto;
+  justify-content: center;
+}
+.products-sample-image {
+  display: grid;
+  place-items: center;
+}
+.products-sample-image-img {
+  width: 80%;
+}
+.products-sample-desc {
+  border: 1px solid #ede4df;
+  border-radius: 10px;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  padding: 3rem;
+}
+.products-sample-desc-title {
+  color: #6a5e5c;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.products-sample-desc-weight {
+  color: #534545;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.products-sample-desc-content {
+  color: #c1a695;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.products-sample-desc-price {
+  color: #786c6a;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.products-sample-desc .product {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  color: #656260;
+  width: 20ch;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #9f9996;
+}
+.products-list {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+}
+.products-list-card img {
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  padding: 1rem;
+}
+.products-list-card p {
+  color: #bb9f8d;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.products-all {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.products-all .productsbtn {
+  background-color: #f6914e;
+  color: #fbc9a9;
+  width: 35ch;
+  padding-block: 1.15rem;
+  text-transform: uppercase;
+}
+.products svg {
+  position: absolute;
+  left: 0;
+  top: 25rem;
+}
+.products svg path {
+  fill: #faead8;
+}
+
+.plant {
+  background-color: #faead8;
+  background-image: url(/assets/img/home/potted-plant.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 10rem;
+}
+.plant-group-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.plant-group-container-column .item {
+  width: 40ch;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.plant-group-container-column .item .quotations img {
+  width: 20%;
+}
+.plant-group-container-column .item p {
+  color: #887a73;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 1.15rem 1rem;
+}
+.plant-group-container-column .item .logo .forbes {
+  width: 40%;
+}
+.plant-group-container-column .item .logo .influencive {
+  width: 60%;
+}
+.plant-group-container-column .item .logo .hackernoon {
+  width: 80%;
+}
+.plant-group-container-column .item .logo .entrepreneur {
+  width: 70%;
+}
+.plant svg {
+  margin-bottom: -1rem;
+}
+.plant svg path {
+  fill: #fefbfa;
+}
+
+.people-say {
+  background-color: #fefbfa;
+  padding: 2rem;
+}
+.people-say-title h2 {
+  color: #443636;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.4;
+}
+.people-say-container {
+  margin-top: 4rem;
+}
+.people-say-container-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.people-say-container-item-card {
+  display: grid;
+  background-color: #f6f0ef;
+  padding: 3rem;
+  gap: 2rem;
+  border-radius: 10px;
+  justify-items: center;
+  position: relative;
+}
+.people-say-container-item-card::before {
+  content: "";
+  background-image: url(/assets/img/home/quotations.png);
+  width: 5ch;
+  height: 5ch;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.people-say-container-item-card::after {
+  content: "";
+  background-image: url(/assets/img/home/quotations.png);
+  width: 5ch;
+  height: 5ch;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.people-say-container-item-card h3,
+.people-say-container-item-card .place {
+  color: #8b987f;
+  font-weight: 700;
+}
+.people-say-container-item-card h3 {
+  font-size: 1.2rem;
+}
+.people-say-container-item-card .place {
+  font-size: 0.9rem;
+}
+.people-say-container-item-card p:not(.place) {
+  color: #cfbbaf;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+}
+.people-say-container-item-card img {
+  width: 50%;
+}
+.people-say-container-item-card .logo-green {
+  text-align: center;
+}
+.people-say-container-item-card .logo-green img {
+  width: 16%;
+}
+
+.bottom {
+  background-color: #edd3c1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.bottom-column {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.bottom-column img {
+  width: 18%;
+}
+.bottom-column:nth-child(2) {
+  justify-content: center;
+}
+.bottom-column:last-of-type {
+  text-align: end;
+}
+.bottom-column a {
+  color: #443636;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.bottom-column .bottombtn {
+  border: 2px solid #d6beae;
+  color: #d6beae;
+  border-radius: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+footer {
+  background-color: #3c562c;
+  padding: 3rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer .nav {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+footer .nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+footer .nav-list .nav-item a {
+  color: #d8d6ca;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+footer .footer-logo {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-logo a {
+  text-align: center;
+}
+footer .footer-logo a img {
+  width: 30%;
+}
+footer .disclaimer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+footer .disclaimer a {
+  color: #5b6f4b;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
